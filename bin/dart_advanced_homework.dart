@@ -1,7 +1,5 @@
 import 'dart:io';
-
-import 'package:dart_advanced_homework/question1/save_file.dart';
-
+import '../lib/question1/save_file.dart';
 import '../lib/question1/read_file.dart';
 import '../lib/question1/student_score.dart';
 
@@ -25,7 +23,7 @@ void main(List<String> arguments) {
     // SaveFile().saveResults("$name, $score");
     //   }
     // }
-    var result = list.where((element) => element.name == name).first;
+    StudentScore result = list.where((element) => element.name == name).first;
     SaveFile().saveResults("${result.name}, ${result.score}");
   }
 }

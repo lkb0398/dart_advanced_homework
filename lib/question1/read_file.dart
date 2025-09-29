@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import './student_score.dart';
 
 class ReadFile {
