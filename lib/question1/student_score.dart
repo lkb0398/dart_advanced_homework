@@ -5,7 +5,7 @@ class StudentScore extends Score {
   int score = 0;
 
   @override
-  void showInfo(int score, {String? name}) {
+  void showInfo() {
     if (name != null && name.isNotEmpty) {
       print("이름: $name, 점수: $score");
     } else {
