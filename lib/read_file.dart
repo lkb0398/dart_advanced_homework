@@ -1,5 +1,6 @@
 import 'dart:io';
-import './student_score.dart';
+
+import 'score.dart';
 
 class ReadFile {
   List<StudentScore> list = [];
