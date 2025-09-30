@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:dart_advanced_homework/read_file.dart';
+import 'package:dart_advanced_homework/save_file.dart';
 import 'package:dart_advanced_homework/score.dart';
 
 // 1번 문제입니다. 주석을 해제/설정하고 실행해주세요.
@@ -8,18 +9,25 @@ import 'package:dart_advanced_homework/score.dart';
 // void main(List<String> arguments) {
 //   List<StudentScore> list = ReadFile().loadStudentData();
 
-//   String? name = "";
-//   int score = 0;
+//   String? input = "";
+//   StudentScore result;
+//   bool hasValue = false;
 
-//   bool isResult = true;
-//   while (isResult) {
-//     stdout.write("1번을 입력하면 가장 높은 점수를 받은학생");
-//     stdout.write("2번을 입력하면 바");
+//   while (!hasValue) {
 //     stdout.write("어떤 학생의 점수를 확인하시겠습니까?");
-//     name = stdin.readLineSync();
+//     input = stdin.readLineSync();
 
-//     StudentScore result = list.where((element) => element.name == name).first;
-//     SaveFile().saveResults("${result.name}, ${result.score}");
+//     hasValue = list.any((element) => element.name == input);
+//     if (hasValue) {
+//       result = list.where((element) => element.name == input).first;
+
+//       result.showInfo();
+//       SaveFile().saveResults("${result.name}, ${result.score}");
+//       return;
+//     } else {
+//       stdout.write("잘못된 학생 이름을 입력하셨습니다.");
+//       stdout.writeln("다시 입력해주세요.");
+//     }
 //   }
 // }
 

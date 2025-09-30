@@ -10,7 +10,7 @@ class StudentScore extends Score {
 
   @override
   void showInfo() {
-    if (name != null && name.isNotEmpty) {
+    if (name.isNotEmpty) {
       print("이름: $name, 점수: $score");
     } else {
       print("점수: $score");
